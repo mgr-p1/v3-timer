@@ -1,4 +1,5 @@
 # v3-timer
+https://mgr-p1.github.io/v3-timer/timer.html
 
 v3を3回実行するとロックかかるので作りました。
 
