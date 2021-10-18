@@ -11,17 +11,20 @@
       body {
         margin: 0;
       }
+      h1 {
+        font-size: 100px;
+      }
       p {
         margin-top: 0;
-        font-size: 50px;
+        font-size: 150px;
       }
       ul {
         list-style: none;
-        padding-left: 1%;
-        font-size: 40px;
+        padding-left: 3%;
+        font-size: 120px;
       }
       li {
-        width: 200px;
+        width: 800px;
       }
       .label {
         float: left;
@@ -53,10 +56,10 @@
           document.querySelector('.time.third').innerHTML = third.toFixed(1);
           if (second <= 30 && counter >= 2) {
             document.querySelector('.v-three').innerHTML = (30 - second).toFixed(1);
-            document.body.style.backgroundColor = 'red';
+            document.body.style.backgroundColor = '#F44';
           } else {
             document.querySelector('.v-three').innerHTML = (0).toFixed(1);
-            document.body.style.backgroundColor = 'white';
+            document.body.style.backgroundColor = '#FFF';
           }
         }, 100);
 
