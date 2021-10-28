@@ -30,6 +30,11 @@ li {
   width: 800px;
 }
 
+.time-box {
+  margin: 0;
+  width: 100%;
+}
+
 .label {
   float: left;
   width: 30px;
@@ -38,4 +43,9 @@ li {
 .time {
   margin-left: 50px;
   width: 100px;
+}
+
+.flash {
+  background-color: royalblue;
+  transition: 0.2s;
 }
