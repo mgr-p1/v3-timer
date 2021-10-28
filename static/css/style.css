@@ -1,0 +1,41 @@
+* {
+  text-align: center;
+  user-select: none;
+}
+
+body {
+  font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 100px;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 150px;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  padding-left: 3%;
+  font-size: 120px;
+}
+
+li {
+  width: 800px;
+}
+
+.label {
+  float: left;
+  width: 30px;
+}
+
+.time {
+  margin-left: 50px;
+  width: 100px;
+}
