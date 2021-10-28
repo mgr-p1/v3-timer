@@ -3,82 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>タイマー</title>
-    <style>
-      * {
-        text-align: center;
-        user-select: none;
-      }
-      body {
-        font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
-        margin: 0;
-      }
-      h1 {
-        font-size: 100px;
-        margin-bottom: 0;
-      }
-      p {
-        margin-top: 0;
-        margin-bottom: 50px;
-        font-size: 150px;
-      }
-      ul {
-        margin: 0;
-        list-style: none;
-        padding-left: 3%;
-        font-size: 120px;
-      }
-      li {
-        width: 800px;
-      }
-      .label {
-        float: left;
-        width: 30px;
-      }
-      .time {
-        margin-left: 50px;
-        width: 100px;
-      }
-    </style>
-    <script type="text/javascript">
-      (()=>{
-        let counter = 0;
-        let first = 0, second = 0, third = 0;
-
-        const timer = setInterval(()=>{
-          switch (counter) {
-            case 3:
-              third += 0.1;
-            case 2:
-              second += 0.1;
-            case 1:
-              first += 0.1;
-            case 0:
-              break;
-          }
-          document.querySelector('.time.first').innerHTML = first.toFixed(1);
-          document.querySelector('.time.second').innerHTML = second.toFixed(1);
-          document.querySelector('.time.third').innerHTML = third.toFixed(1);
-          if (second <= 30 && counter >= 2) {
-            document.querySelector('.v-three').innerHTML = (30 - second).toFixed(1);
-            document.body.style.backgroundColor = '#F44';
-          } else {
-            document.querySelector('.v-three').innerHTML = (0).toFixed(1);
-            document.body.style.backgroundColor = '#FFF';
-          }
-        }, 100);
-
-        const cng = () => {
-          counter = counter>=3 ? counter : counter + 1;
-          third = second;
-          second = first;
-          first = 0;
-        }
-
-        window.addEventListener('click', cng);
-        window.addEventListener('keydown', cng);
-        window.addEventListener('touchstart', cng);
-      })();
-    </script>
+    <link rel="stylesheet" href="./static/css/style.css">
+    <script type="text/javascript" src="./static/js/script.js"></script>
   </head>
   <body>
     <div class="container">
