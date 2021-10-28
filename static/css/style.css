@@ -47,5 +47,5 @@ li {
 
 .flash {
   background-color: royalblue;
-  transition: 1s;
+  transition: 0.2s;
 }
