@@ -26,10 +26,16 @@
   }, 100);
 
   const cng = () => {
-    counter = counter>=3 ? counter : counter + 1;
-    third = second;
-    second = first;
-    first = 0;
+    if(!document.querySelector('.time-box').classList.contains('flash')){
+      document.querySelector('.time-box').classList.add('flash');
+      setTimeout(()=>{
+        document.querySelector('.time-box').classList.remove('flash');
+      }, 1000);
+      counter = counter>=3 ? counter : counter + 1;
+      third = second;
+      second = first;
+      first = 0;
+    }
   }
 
   window.addEventListener('click', cng);
