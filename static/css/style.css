@@ -11,6 +11,7 @@ body {
 h1 {
   font-size: 100px;
   margin-bottom: 0;
+  width: 100%;
 }
 
 p {
@@ -24,10 +25,11 @@ ul {
   list-style: none;
   padding-left: 3%;
   font-size: 120px;
+  width: 100%;
 }
 
 li {
-  width: 800px;
+  width: 90%;
 }
 
 .time-box {
